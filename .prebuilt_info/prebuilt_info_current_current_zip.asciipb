@@ -1,6 +1,10 @@
 drops {
   android_build_drop {
+<<<<<<< HEAD   (71faa3 [automerger skipped] DO NOT MERGE - Merge TP1A.220624.013 am)
     build_id: "T1004067"
+=======
+    build_id: "T1004275"
+>>>>>>> CHANGE (1e00fb DO NOT MERGE Drop prebuilt files to android source tree.)
     target: "train_build"
     source_file: "mainline-sdks/for-Tiramisu-build/current/com.google.android.appsearch/sdk/appsearch-sdk-current.zip"
   }
