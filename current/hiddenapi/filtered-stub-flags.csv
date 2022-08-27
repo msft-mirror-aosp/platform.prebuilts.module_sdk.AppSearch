@@ -87,6 +87,7 @@ Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda2;->run()V,core-
 Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$2$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$4$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$4$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession;->close()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession;->getByDocumentId(Landroid/app/appsearch/GetByDocumentIdRequest;Ljava/util/concurrent/Executor;Landroid/app/appsearch/BatchResultCallback;)V,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession;->getNamespaces(Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;)V,public-api,system-api,test-api
@@ -174,6 +175,13 @@ Landroid/app/appsearch/PackageIdentifier;->equals(Ljava/lang/Object;)Z,core-plat
 Landroid/app/appsearch/PackageIdentifier;->getPackageName()Ljava/lang/String;,public-api,system-api,test-api
 Landroid/app/appsearch/PackageIdentifier;->getSha256Certificate()[B,public-api,system-api,test-api
 Landroid/app/appsearch/PackageIdentifier;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath$PathSegment;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath$PathSegment;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath$PathSegment;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath;->iterator()Ljava/util/Iterator;,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyPath;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/PutDocumentsRequest$Builder;-><init>()V,public-api,system-api,test-api
 Landroid/app/appsearch/PutDocumentsRequest$Builder;->addGenericDocuments(Ljava/util/Collection;)Landroid/app/appsearch/PutDocumentsRequest$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/PutDocumentsRequest$Builder;->addGenericDocuments([Landroid/app/appsearch/GenericDocument;)Landroid/app/appsearch/PutDocumentsRequest$Builder;,public-api,system-api,test-api
@@ -276,6 +284,8 @@ Landroid/app/appsearch/SearchSpec;->getResultGroupingTypeFlags()I,public-api,sys
 Landroid/app/appsearch/SearchSpec;->getSnippetCount()I,public-api,system-api,test-api
 Landroid/app/appsearch/SearchSpec;->getSnippetCountPerProperty()I,public-api,system-api,test-api
 Landroid/app/appsearch/SearchSpec;->getTermMatch()I,public-api,system-api,test-api
+Landroid/app/appsearch/SearchSuggestionResult;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/SearchSuggestionResult;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/SetSchemaRequest$Builder;-><init>()V,public-api,system-api,test-api
 Landroid/app/appsearch/SetSchemaRequest$Builder;->addRequiredPermissionsForSchemaTypeVisibility(Ljava/lang/String;Ljava/util/Set;)Landroid/app/appsearch/SetSchemaRequest$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/SetSchemaRequest$Builder;->addSchemas(Ljava/util/Collection;)Landroid/app/appsearch/SetSchemaRequest$Builder;,public-api,system-api,test-api
