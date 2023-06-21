@@ -1,5 +1,11 @@
 // This is auto-generated. DO NOT EDIT.
 
+// blueprint rules added by vendor/google/build/mainline_modules_sdks.py
+// to support coexistence.
+blueprint_package_includes {
+    match_all: ["com.android.mainline"]
+}
+
 package {
     // A default list here prevents the license LSC from adding its own list which would
     // be unnecessary as every module in the sdk already has its own licenses property.
@@ -82,6 +88,7 @@ java_import {
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
     jars: ["java_systemserver_libs/snapshot/jars/are/invalid/service-appsearch.jar"],
+    min_sdk_version: "33",
     permitted_packages: [
         "com.android.server.appsearch",
         "com.google.android.icing",
