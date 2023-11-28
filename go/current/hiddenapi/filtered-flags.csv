@@ -485,6 +485,7 @@ Landroid/app/appsearch/observer/SchemaChangeInfo;->getDatabaseName()Ljava/lang/S
 Landroid/app/appsearch/observer/SchemaChangeInfo;->getPackageName()Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/observer/SchemaChangeInfo;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/observer/SchemaChangeInfo;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/safeparcel/AbstractSafeParcelable;->describeContents()I,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/util/DocumentIdUtil;->createQualifiedId(Ljava/lang/String;Ljava/lang/String;Landroid/app/appsearch/GenericDocument;)Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/util/DocumentIdUtil;->createQualifiedId(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/util/IndentingStringBuilder;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
