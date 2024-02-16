@@ -93,8 +93,8 @@ Landroid/app/appsearch/AppSearchSchema;->getProperties()Ljava/util/List;,public-
 Landroid/app/appsearch/AppSearchSchema;->getSchemaType()Ljava/lang/String;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema;->toString()Ljava/lang/String;,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda0;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
-Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda1;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda3;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$1$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
@@ -440,6 +440,8 @@ Landroid/app/appsearch/VisibilityPermissionDocumentCreator;->newArray(I)[Ljava/l
 Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource;->describeContents()I,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource;->writeToParcel(Landroid/os/Parcel;I)V,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
