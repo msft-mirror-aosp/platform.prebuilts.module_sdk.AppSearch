@@ -437,12 +437,11 @@ Landroid/app/appsearch/VisibilityPermissionDocument;->hashCode()I,core-platform-
 Landroid/app/appsearch/VisibilityPermissionDocument;->writeToParcel(Landroid/os/Parcel;I)V,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/VisibilityPermissionDocumentCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/VisibilityPermissionDocumentCreator;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
-Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
-Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
-Landroid/app/appsearch/aidl/AppSearchAttributionSource;->describeContents()I,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource;->hashCode()I,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchAttributionSource;->writeToParcel(Landroid/os/Parcel;I)V,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSourceCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSourceCreator;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->newArray(I)[Ljava/lang/Object;,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel;->describeContents()I,public-api,sdk,system-api,test-api
