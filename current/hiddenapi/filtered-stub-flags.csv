@@ -17,7 +17,6 @@ Landroid/app/appsearch/AppSearchManager;->createSearchSession(Landroid/app/appse
 Landroid/app/appsearch/AppSearchManagerFrameworkInitializer$$ExternalSyntheticLambda0;->createService(Landroid/content/Context;Landroid/os/IBinder;)Ljava/lang/Object;,system-api,test-api
 Landroid/app/appsearch/AppSearchManagerFrameworkInitializer;->initialize()V,system-api,test-api
 Landroid/app/appsearch/AppSearchMigrationHelper;->close()V,core-platform-api,public-api,system-api,test-api
-Landroid/app/appsearch/AppSearchResult;->RESULT_DENIED:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_INTERNAL_ERROR:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_INVALID_ARGUMENT:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_INVALID_SCHEMA:I,public-api,system-api,test-api
@@ -25,7 +24,6 @@ Landroid/app/appsearch/AppSearchResult;->RESULT_IO_ERROR:I,public-api,system-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_NOT_FOUND:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_OK:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_OUT_OF_SPACE:I,public-api,system-api,test-api
-Landroid/app/appsearch/AppSearchResult;->RESULT_RATE_LIMITED:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_SECURITY_ERROR:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->RESULT_UNKNOWN_ERROR:I,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchResult;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
@@ -105,8 +103,9 @@ Landroid/app/appsearch/AppSearchSchema;->toString()Ljava/lang/String;,core-platf
 Landroid/app/appsearch/AppSearchSchema;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchemaCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchemaCreator;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
-Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda0;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
-Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda1;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda1;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda2;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda4;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$$ExternalSyntheticLambda7;->run()V,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSession$1$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,system-api,test-api
@@ -654,10 +653,6 @@ Landroid/app/appsearch/aidl/SetSchemaAidlRequestCreator;->newArray(I)[Ljava/lang
 Landroid/app/appsearch/aidl/UnregisterObserverCallbackAidlRequest;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/UnregisterObserverCallbackAidlRequestCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/UnregisterObserverCallbackAidlRequestCreator;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
-Landroid/app/appsearch/aidl/ValueParcel$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
-Landroid/app/appsearch/aidl/ValueParcel$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
-Landroid/app/appsearch/aidl/ValueParcel;->describeContents()I,public-api,system-api,test-api
-Landroid/app/appsearch/aidl/ValueParcel;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/WriteSearchResultsToFileAidlRequest;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/WriteSearchResultsToFileAidlRequestCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/WriteSearchResultsToFileAidlRequestCreator;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
