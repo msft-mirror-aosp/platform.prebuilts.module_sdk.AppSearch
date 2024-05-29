@@ -49,7 +49,10 @@ java_sdk_library_import {
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
     shared_library: false,
-    permitted_packages: ["android.app.appsearch"],
+    permitted_packages: [
+        "android.app.appsearch",
+        "com.android.appsearch.flags",
+    ],
     public: {
         jars: ["sdk_library/public/framework-appsearch-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-appsearch.srcjar"],
