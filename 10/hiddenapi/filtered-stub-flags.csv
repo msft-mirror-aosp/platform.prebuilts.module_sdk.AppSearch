@@ -39,12 +39,14 @@ Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig$Builder;-><init>(Lj
 Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig$Builder;->build()Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig$Builder;->setCardinality(I)Landroid/app/appsearch/AppSearchSchema$BooleanPropertyConfig$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$Builder;-><init>(Ljava/lang/String;)V,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSchema$Builder;->addParentType(Ljava/lang/String;)Landroid/app/appsearch/AppSearchSchema$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$Builder;->addProperty(Landroid/app/appsearch/AppSearchSchema$PropertyConfig;)Landroid/app/appsearch/AppSearchSchema$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$Builder;->build()Landroid/app/appsearch/AppSearchSchema;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig$Builder;-><init>(Ljava/lang/String;)V,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig$Builder;->build()Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig$Builder;->setCardinality(I)Landroid/app/appsearch/AppSearchSchema$BytesPropertyConfig$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;-><init>(Ljava/lang/String;Ljava/lang/String;)V,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;->addIndexableNestedProperties(Ljava/util/Collection;)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;->build()Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;->setCardinality(I)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;->setShouldIndexNestedProperties(Z)Landroid/app/appsearch/AppSearchSchema$DocumentPropertyConfig$Builder;,public-api,system-api,test-api
@@ -209,6 +211,11 @@ Landroid/app/appsearch/PackageIdentifier;->equals(Ljava/lang/Object;)Z,core-plat
 Landroid/app/appsearch/PackageIdentifier;->getPackageName()Ljava/lang/String;,public-api,system-api,test-api
 Landroid/app/appsearch/PackageIdentifier;->getSha256Certificate()[B,public-api,system-api,test-api
 Landroid/app/appsearch/PackageIdentifier;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyParcel;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyParcel;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyParcel;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyParcelCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/app/appsearch/PropertyParcelCreator;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/PropertyPath$PathSegment;->NON_REPEATED_CARDINALITY:I,public-api,system-api,test-api
 Landroid/app/appsearch/PropertyPath$PathSegment;->create(Ljava/lang/String;)Landroid/app/appsearch/PropertyPath$PathSegment;,public-api,system-api,test-api
 Landroid/app/appsearch/PropertyPath$PathSegment;->create(Ljava/lang/String;I)Landroid/app/appsearch/PropertyPath$PathSegment;,public-api,system-api,test-api
@@ -427,6 +434,10 @@ Landroid/app/appsearch/StorageInfo;->getAliveNamespacesCount()I,public-api,syste
 Landroid/app/appsearch/StorageInfo;->getSizeBytes()J,public-api,system-api,test-api
 Landroid/app/appsearch/VisibilityDocument$Builder;->build()Landroid/app/appsearch/GenericDocument;,public-api,system-api,test-api
 Landroid/app/appsearch/VisibilityPermissionDocument$Builder;->build()Landroid/app/appsearch/GenericDocument;,public-api,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource;->describeContents()I,public-api,system-api,test-api
+Landroid/app/appsearch/aidl/AppSearchAttributionSource;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel$1;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/aidl/AppSearchBatchResultParcel;->describeContents()I,public-api,system-api,test-api
@@ -485,6 +496,7 @@ Landroid/app/appsearch/observer/SchemaChangeInfo;->getDatabaseName()Ljava/lang/S
 Landroid/app/appsearch/observer/SchemaChangeInfo;->getPackageName()Ljava/lang/String;,public-api,system-api,test-api
 Landroid/app/appsearch/observer/SchemaChangeInfo;->hashCode()I,core-platform-api,public-api,system-api,test-api
 Landroid/app/appsearch/observer/SchemaChangeInfo;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/safeparcel/AbstractSafeParcelable;->describeContents()I,public-api,system-api,test-api
 Landroid/app/appsearch/util/DocumentIdUtil;->createQualifiedId(Ljava/lang/String;Ljava/lang/String;Landroid/app/appsearch/GenericDocument;)Ljava/lang/String;,public-api,system-api,test-api
 Landroid/app/appsearch/util/DocumentIdUtil;->createQualifiedId(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;,public-api,system-api,test-api
 Landroid/app/appsearch/util/IndentingStringBuilder;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
