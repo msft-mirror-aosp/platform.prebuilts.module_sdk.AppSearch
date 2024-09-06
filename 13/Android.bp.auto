@@ -13,6 +13,11 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.appsearch-bootclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "appsearch_module" is true.
+    use_source_config_var: {
+        config_namespace: "appsearch_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
@@ -35,6 +40,11 @@ prebuilt_bootclasspath_fragment {
 
 java_sdk_library_import {
     name: "framework-appsearch",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "appsearch_module" is true.
+    use_source_config_var: {
+        config_namespace: "appsearch_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
@@ -71,6 +81,11 @@ java_sdk_library_import {
 
 java_import {
     name: "service-appsearch",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "appsearch_module" is true.
+    use_source_config_var: {
+        config_namespace: "appsearch_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
@@ -91,6 +106,11 @@ license {
 
 prebuilt_systemserverclasspath_fragment {
     name: "com.android.appsearch-systemserverclasspath-fragment",
+    // Do not prefer prebuilt if the Soong config variable "source_build" in namespace "appsearch_module" is true.
+    use_source_config_var: {
+        config_namespace: "appsearch_module",
+        var_name: "source_build",
+    },
     visibility: ["//visibility:public"],
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
