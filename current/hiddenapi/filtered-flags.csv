@@ -666,6 +666,7 @@ Landroid/app/appsearch/exceptions/AppSearchException;-><init>(ILjava/lang/String
 Landroid/app/appsearch/exceptions/AppSearchException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/exceptions/AppSearchException;->getResultCode()I,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/exceptions/AppSearchException;->toAppSearchResult()Landroid/app/appsearch/AppSearchResult;,public-api,sdk,system-api,test-api
+Landroid/app/appsearch/flags/CustomFeatureFlags$$ExternalSyntheticLambda0;->test(Ljava/lang/Object;)Z,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/functions/AppFunctionManager$1$$ExternalSyntheticLambda0;->run()V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/functions/AppFunctionService$1$$ExternalSyntheticLambda0;->accept(Ljava/lang/Object;)V,core-platform-api,public-api,sdk,system-api,test-api
 Landroid/app/appsearch/functions/AppFunctionService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;,public-api,sdk,system-api,test-api
