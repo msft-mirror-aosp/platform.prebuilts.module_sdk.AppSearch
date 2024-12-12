@@ -8,6 +8,11 @@ Landroid/app/appsearch/AppSearchBatchResult;->getFailures()Ljava/util/Map;,publi
 Landroid/app/appsearch/AppSearchBatchResult;->getSuccesses()Ljava/util/Map;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchBatchResult;->isSuccess()Z,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchBatchResult;->toString()Ljava/lang/String;,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchBlobHandle;->equals(Ljava/lang/Object;)Z,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchBlobHandle;->hashCode()I,core-platform-api,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchBlobHandle;->writeToParcel(Landroid/os/Parcel;I)V,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchBlobHandleCreator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;,public-api,system-api,test-api
+Landroid/app/appsearch/AppSearchBlobHandleCreator;->newArray(I)[Ljava/lang/Object;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchManager$SearchContext$Builder;-><init>(Ljava/lang/String;)V,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchManager$SearchContext$Builder;->build()Landroid/app/appsearch/AppSearchManager$SearchContext;,public-api,system-api,test-api
 Landroid/app/appsearch/AppSearchManager$SearchContext;->getDatabaseName()Ljava/lang/String;,public-api,system-api,test-api
