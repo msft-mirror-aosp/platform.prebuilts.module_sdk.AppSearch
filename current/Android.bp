@@ -39,10 +39,7 @@ java_sdk_library_import {
     apex_available: ["com.android.appsearch"],
     licenses: ["appsearch-sdk_packages_modules_appsearch_license"],
     shared_library: false,
-    permitted_packages: [
-        "android.app.appsearch",
-        "org.jspecify.annotations",
-    ],
+    permitted_packages: ["android.app.appsearch"],
     public: {
         jars: ["sdk_library/public/framework-appsearch-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-appsearch.srcjar"],
@@ -80,6 +77,7 @@ java_import {
         "com.android.isolated_storage_service",
         "com.android.server.appsearch",
         "com.google.android.icing",
+        "org.jspecify.annotations",
     ],
 }
 
