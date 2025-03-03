@@ -74,8 +74,10 @@ java_import {
     jars: ["java_systemserver_libs/snapshot/jars/are/invalid/service-appsearch.jar"],
     min_sdk_version: "33",
     permitted_packages: [
+        "com.android.isolated_storage_service",
         "com.android.server.appsearch",
         "com.google.android.icing",
+        "org.jspecify.annotations",
     ],
 }
 
