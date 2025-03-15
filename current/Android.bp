@@ -77,7 +77,6 @@ java_import {
         "com.android.isolated_storage_service",
         "com.android.server.appsearch",
         "com.google.android.icing",
-        "org.jspecify.annotations",
     ],
 }
 
