@@ -66,6 +66,7 @@ package android.app.appsearch {
 
   public final class AppSearchSchema implements android.os.Parcelable {
     method public final int describeContents();
+    method @NonNull public String getDescription();
     method @NonNull public java.util.List<java.lang.String> getParentTypes();
     method @NonNull public java.util.List<android.app.appsearch.AppSearchSchema.PropertyConfig> getProperties();
     method @NonNull public String getSchemaType();
@@ -80,6 +81,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.BlobHandlePropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.BlobHandlePropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.BlobHandlePropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.BlobHandlePropertyConfig.Builder setDescription(@NonNull String);
   }
 
   public static final class AppSearchSchema.BooleanPropertyConfig extends android.app.appsearch.AppSearchSchema.PropertyConfig {
@@ -90,6 +92,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.BooleanPropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.BooleanPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.BooleanPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.BooleanPropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.BooleanPropertyConfig.Builder setScoringEnabled(boolean);
   }
 
@@ -101,6 +104,7 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.AppSearchSchema build();
     method @NonNull public android.app.appsearch.AppSearchSchema.Builder clearParentTypes();
     method @NonNull public android.app.appsearch.AppSearchSchema.Builder clearProperties();
+    method @NonNull public android.app.appsearch.AppSearchSchema.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.Builder setSchemaType(@NonNull String);
   }
 
@@ -111,6 +115,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.BytesPropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.BytesPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.BytesPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.BytesPropertyConfig.Builder setDescription(@NonNull String);
   }
 
   public static final class AppSearchSchema.DocumentPropertyConfig extends android.app.appsearch.AppSearchSchema.PropertyConfig {
@@ -127,6 +132,7 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.AppSearchSchema.DocumentPropertyConfig.Builder addIndexableNestedPropertyPaths(@NonNull java.util.Collection<android.app.appsearch.PropertyPath>);
     method @NonNull public android.app.appsearch.AppSearchSchema.DocumentPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.DocumentPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.DocumentPropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.DocumentPropertyConfig.Builder setShouldIndexNestedProperties(boolean);
   }
 
@@ -138,6 +144,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.DoublePropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.DoublePropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.DoublePropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.DoublePropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.DoublePropertyConfig.Builder setScoringEnabled(boolean);
   }
 
@@ -154,6 +161,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.EmbeddingPropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.EmbeddingPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder setIndexingType(int);
     method @NonNull public android.app.appsearch.AppSearchSchema.EmbeddingPropertyConfig.Builder setQuantizationType(int);
   }
@@ -169,12 +177,14 @@ package android.app.appsearch {
     ctor public AppSearchSchema.LongPropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.LongPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.LongPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.LongPropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.LongPropertyConfig.Builder setIndexingType(int);
     method @NonNull public android.app.appsearch.AppSearchSchema.LongPropertyConfig.Builder setScoringEnabled(boolean);
   }
 
   public abstract static class AppSearchSchema.PropertyConfig {
     method public int getCardinality();
+    method @NonNull public String getDescription();
     method @NonNull public String getName();
     field public static final int CARDINALITY_OPTIONAL = 2; // 0x2
     field public static final int CARDINALITY_REPEATED = 1; // 0x1
@@ -200,6 +210,7 @@ package android.app.appsearch {
     ctor public AppSearchSchema.StringPropertyConfig.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig build();
     method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig.Builder setCardinality(int);
+    method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig.Builder setDescription(@NonNull String);
     method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig.Builder setIndexingType(int);
     method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig.Builder setJoinableValueType(int);
     method @NonNull public android.app.appsearch.AppSearchSchema.StringPropertyConfig.Builder setTokenizerType(int);
@@ -551,8 +562,19 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.SearchResult.Builder setRankingSignal(double);
   }
 
+  public static final class SearchResult.EmbeddingMatchInfo implements android.os.Parcelable {
+    ctor public SearchResult.EmbeddingMatchInfo(double, int, int);
+    method public final int describeContents();
+    method public int getEmbeddingSearchMetricType();
+    method public int getQueryEmbeddingVectorIndex();
+    method public double getSemanticScore();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.SearchResult.EmbeddingMatchInfo> CREATOR;
+  }
+
   public static final class SearchResult.MatchInfo implements android.os.Parcelable {
     method public final int describeContents();
+    method @Nullable public android.app.appsearch.SearchResult.EmbeddingMatchInfo getEmbeddingMatch();
     method @NonNull public CharSequence getExactMatch();
     method @NonNull public android.app.appsearch.SearchResult.MatchRange getExactMatchRange();
     method @NonNull public String getFullText();
@@ -562,6 +584,7 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.SearchResult.MatchRange getSnippetRange();
     method @NonNull public CharSequence getSubmatch();
     method @NonNull public android.app.appsearch.SearchResult.MatchRange getSubmatchRange();
+    method @Nullable public android.app.appsearch.SearchResult.TextMatchInfo getTextMatch();
     method public void writeToParcel(@NonNull android.os.Parcel, int);
     field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.SearchResult.MatchInfo> CREATOR;
   }
@@ -569,15 +592,33 @@ package android.app.appsearch {
   public static final class SearchResult.MatchInfo.Builder {
     ctor public SearchResult.MatchInfo.Builder(@NonNull String);
     method @NonNull public android.app.appsearch.SearchResult.MatchInfo build();
+    method @NonNull public android.app.appsearch.SearchResult.MatchInfo.Builder setEmbeddingMatch(@Nullable android.app.appsearch.SearchResult.EmbeddingMatchInfo);
     method @NonNull public android.app.appsearch.SearchResult.MatchInfo.Builder setExactMatchRange(@NonNull android.app.appsearch.SearchResult.MatchRange);
     method @NonNull public android.app.appsearch.SearchResult.MatchInfo.Builder setSnippetRange(@NonNull android.app.appsearch.SearchResult.MatchRange);
     method @NonNull public android.app.appsearch.SearchResult.MatchInfo.Builder setSubmatchRange(@NonNull android.app.appsearch.SearchResult.MatchRange);
   }
 
-  public static final class SearchResult.MatchRange {
+  public static final class SearchResult.MatchRange implements android.os.Parcelable {
     ctor public SearchResult.MatchRange(int, int);
+    method public final int describeContents();
     method public int getEnd();
     method public int getStart();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.SearchResult.MatchRange> CREATOR;
+  }
+
+  public static final class SearchResult.TextMatchInfo implements android.os.Parcelable {
+    ctor public SearchResult.TextMatchInfo(@NonNull android.app.appsearch.SearchResult.MatchRange, @NonNull android.app.appsearch.SearchResult.MatchRange, @NonNull android.app.appsearch.SearchResult.MatchRange);
+    method public final int describeContents();
+    method @NonNull public CharSequence getExactMatch();
+    method @NonNull public android.app.appsearch.SearchResult.MatchRange getExactMatchRange();
+    method @NonNull public String getFullText();
+    method @NonNull public CharSequence getSnippet();
+    method @NonNull public android.app.appsearch.SearchResult.MatchRange getSnippetRange();
+    method @NonNull public CharSequence getSubmatch();
+    method @NonNull public android.app.appsearch.SearchResult.MatchRange getSubmatchRange();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.SearchResult.TextMatchInfo> CREATOR;
   }
 
   public class SearchResults implements java.io.Closeable {
@@ -618,6 +659,7 @@ package android.app.appsearch {
     method public boolean isNumericSearchEnabled();
     method public boolean isScorablePropertyRankingEnabled();
     method public boolean isVerbatimSearchEnabled();
+    method public boolean shouldRetrieveEmbeddingMatchInfos();
     method public void writeToParcel(@NonNull android.os.Parcel, int);
     field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.SearchSpec> CREATOR;
     field public static final int EMBEDDING_SEARCH_METRIC_TYPE_COSINE = 1; // 0x1
@@ -694,6 +736,7 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.SearchSpec.Builder setRankingStrategy(@NonNull String);
     method @NonNull public android.app.appsearch.SearchSpec.Builder setResultCountPerPage(@IntRange(from=0, to=0x2710) int);
     method @NonNull public android.app.appsearch.SearchSpec.Builder setResultGrouping(int, int);
+    method @NonNull public android.app.appsearch.SearchSpec.Builder setRetrieveEmbeddingMatchInfos(boolean);
     method @NonNull public android.app.appsearch.SearchSpec.Builder setScorablePropertyRankingEnabled(boolean);
     method @NonNull public android.app.appsearch.SearchSpec.Builder setSearchSourceLogTag(@NonNull String);
     method @NonNull public android.app.appsearch.SearchSpec.Builder setSnippetCount(@IntRange(from=0, to=0x2710) int);
