@@ -1,23 +1,6 @@
 // Signature format: 2.0
 package android.app.appsearch {
 
-  public final class AppSearchAccount extends android.app.appsearch.GenericDocument {
-    ctor public AppSearchAccount(@NonNull android.app.appsearch.GenericDocument);
-    method @Nullable public String getAccountId();
-    method @Nullable public String getAccountName();
-    method @Nullable public String getAccountType();
-    field public static final android.app.appsearch.AppSearchSchema SCHEMA;
-    field public static final String SCHEMA_TYPE = "builtin:Account";
-  }
-
-  public static final class AppSearchAccount.Builder extends android.app.appsearch.GenericDocument.Builder<android.app.appsearch.AppSearchAccount.Builder> {
-    ctor public AppSearchAccount.Builder(@NonNull String, @NonNull String);
-    method @NonNull public android.app.appsearch.AppSearchAccount build();
-    method @NonNull public android.app.appsearch.AppSearchAccount.Builder setAccountId(@NonNull String);
-    method @NonNull public android.app.appsearch.AppSearchAccount.Builder setAccountName(@NonNull String);
-    method @NonNull public android.app.appsearch.AppSearchAccount.Builder setAccountType(@NonNull String);
-  }
-
   public final class AppSearchBatchResult<KeyType, ValueType> {
     method @NonNull public java.util.Map<KeyType,android.app.appsearch.AppSearchResult<ValueType>> getAll();
     method @NonNull public java.util.Map<KeyType,android.app.appsearch.AppSearchResult<ValueType>> getFailures();
@@ -78,7 +61,6 @@ package android.app.appsearch {
     field public static final int RESULT_OUT_OF_SPACE = 5; // 0x5
     field public static final int RESULT_RATE_LIMITED = 10; // 0xa
     field public static final int RESULT_SECURITY_ERROR = 8; // 0x8
-    field public static final int RESULT_UNAVAILABLE = 14; // 0xe
     field public static final int RESULT_UNKNOWN_ERROR = 1; // 0x1
   }
 
@@ -361,7 +343,6 @@ package android.app.appsearch {
     method @NonNull public java.util.Map<java.lang.String,java.util.Set<android.app.appsearch.SchemaVisibilityConfig>> getSchemaTypesVisibleToConfigs();
     method @NonNull public java.util.Map<java.lang.String,java.util.Set<android.app.appsearch.PackageIdentifier>> getSchemaTypesVisibleToPackages();
     method @NonNull public java.util.Set<android.app.appsearch.AppSearchSchema> getSchemas();
-    method @NonNull public java.util.Map<java.lang.String,java.util.Set<android.app.appsearch.PropertyPath>> getSchemasWipeoutAccountPropertyPaths();
     method @IntRange(from=0) public int getVersion();
     method public void writeToParcel(@NonNull android.os.Parcel, int);
     field @NonNull public static final android.os.Parcelable.Creator<android.app.appsearch.GetSchemaResponse> CREATOR;
@@ -378,13 +359,11 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder clearSchemaTypeNotDisplayedBySystem(@NonNull String);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder clearSchemaTypeVisibleToConfigs(@NonNull String);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder clearSchemaTypeVisibleToPackages(@NonNull String);
-    method @NonNull public android.app.appsearch.GetSchemaResponse.Builder clearSchemaTypeWipeoutAccountPropertyPaths(@NonNull String);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder clearSchemas();
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setPubliclyVisibleSchema(@NonNull String, @NonNull android.app.appsearch.PackageIdentifier);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setRequiredPermissionsForSchemaTypeVisibility(@NonNull String, @NonNull java.util.Set<java.util.Set<java.lang.Integer>>);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setSchemaTypeVisibleToConfigs(@NonNull String, @NonNull java.util.Set<android.app.appsearch.SchemaVisibilityConfig>);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setSchemaTypeVisibleToPackages(@NonNull String, @NonNull java.util.Set<android.app.appsearch.PackageIdentifier>);
-    method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setSchemaTypeWipeoutAccountPropertyPaths(@NonNull String, @NonNull java.util.Set<android.app.appsearch.PropertyPath>);
     method @NonNull public android.app.appsearch.GetSchemaResponse.Builder setVersion(@IntRange(from=0) int);
   }
 
@@ -832,10 +811,8 @@ package android.app.appsearch {
     method @NonNull public java.util.Set<java.lang.String> getSchemasNotDisplayedBySystem();
     method @NonNull public java.util.Map<java.lang.String,java.util.Set<android.app.appsearch.SchemaVisibilityConfig>> getSchemasVisibleToConfigs();
     method @NonNull public java.util.Map<java.lang.String,java.util.Set<android.app.appsearch.PackageIdentifier>> getSchemasVisibleToPackages();
-    method @NonNull public java.util.Map<java.lang.String,java.util.Set<java.lang.String>> getSchemasWipeoutAccountPropertyPaths();
     method @IntRange(from=1) public int getVersion();
     method public boolean isForceOverride();
-    field public static final int PRIVATE_COMPUTE_CORE_UID_ACCESS = 12; // 0xc
     field public static final int READ_ASSISTANT_APP_SEARCH_DATA = 6; // 0x6
     field public static final int READ_CALENDAR = 2; // 0x2
     field public static final int READ_CONTACTS = 3; // 0x3
@@ -862,7 +839,6 @@ package android.app.appsearch {
     method @NonNull public android.app.appsearch.SetSchemaRequest.Builder setPubliclyVisibleSchema(@NonNull String, @Nullable android.app.appsearch.PackageIdentifier);
     method @NonNull public android.app.appsearch.SetSchemaRequest.Builder setSchemaTypeDisplayedBySystem(@NonNull String, boolean);
     method @NonNull public android.app.appsearch.SetSchemaRequest.Builder setSchemaTypeVisibilityForPackage(@NonNull String, boolean, @NonNull android.app.appsearch.PackageIdentifier);
-    method @NonNull public android.app.appsearch.SetSchemaRequest.Builder setSchemaTypeWipeoutAccountPropertyPaths(@NonNull String, @NonNull java.util.Set<android.app.appsearch.PropertyPath>, boolean);
     method @NonNull public android.app.appsearch.SetSchemaRequest.Builder setVersion(@IntRange(from=1) int);
   }
 

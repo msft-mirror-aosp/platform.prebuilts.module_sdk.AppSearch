@@ -78,9 +78,6 @@ java_import {
         "com.android.server.appsearch",
         "com.google.android.icing",
     ],
-    dex_preopt: {
-        profile_guided: true,
-    },
 }
 
 license {
